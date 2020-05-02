@@ -6,6 +6,7 @@ export default function({ store }) {
     new VueSocketIO({
       debug: false,
       connection: 'https://chat-vekil.herokuapp.com',
+      // connection: 'http://localhost:3000/',
       vuex: {
         store,
         actionPrefix: 'SOCKET_',
